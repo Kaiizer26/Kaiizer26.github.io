@@ -4,7 +4,6 @@
 *{
     padding:0;
     margin: 0;
-    min-height: 3em;
 }
 body{
     display: flex;
@@ -20,8 +19,18 @@ a{
     color:white;
 }
 
-img{
+/* img{
     width: 240px;
+} */
+
+p{
+    color:white;
+}
+h1{
+    color:white;
+}
+h2{
+    color:white;
 }
 /* HEADER ---------------- */
 header{
@@ -33,6 +42,7 @@ header{
 }
 
 header #header-dylan{
+    
     font-size: 18px;
     font-weight: 600;
     color: #ffdb70;
@@ -43,35 +53,144 @@ header div#header-milieu a{
 }
 
 header img{
-    border: solid black;
+    margin-top: 0;
+    height: 3em;
+    width: 50px;
 }
 /* Fin HEADER ---------------- */
 
+/* Nav --------------------- */
 nav{
-    display: flex;
+    display:flex;
     background-color: #1F1F1F;
     width: 100%;
     justify-content: center;
+    align-items: center;
+    height: 80vh;
+    
+    
+}
+
+nav div#nav-texte{
+    text-align: left;
+    margin-top: 7em;
+    margin-right: 3em;
 }
 
 nav img{
-    border-radius: 100px;
+    width: 420px;
+    height: 420px;
+    border-radius: 999px;
+    box-shadow: 0px 0px 73px -9px rgba(255, 219, 112, 0.44);
+    border: solid #ffdb68;
+}
+nav div p{
+    height: 3em;
+}
+nav div p#nav-hello{
+    color: #fde68a;
 }
 
+nav #nav-dylan{
+    font-size: 48px;
+    height: 1em;
+/* Dynamic text */
+}
+nav ul.dynamic-txt{
+    height: 3em;
+    overflow: hidden;
+}
+nav ul li{
+    list-style: none;
+    position: relative;
+    font-size: 24px;
+    top:0;
+    animation: slide 16s steps(4) infinite;
+    
+}
+@keyframes slide{
+    100%{
+        top:-328px;
+    }
+}
+nav h2{
+    position:relative;
+    margin: 5px 0;
+    background-image: linear-gradient(90deg, rgba(255,254,248,1) 3%, rgba(255,255,255,1) 35%, rgba(253,230,138,1) 53%, rgba(252,228,134,1) 61%, rgba(215,171,37,1) 100%);    background-clip: text;
+    color: transparent;
+    margin-top: 10px;
+    font-size: 24px;
+    height: 3em;
+}
+
+nav h2::after{
+    content:"";
+    position: absolute;
+    left: 0;
+    top:0;
+    height: 170%;
+    width: 100%;
+    background-color: #1F1F1F;
+    border-left: 2px solid #FC6D6D;
+    animation: typing 4s steps(44) infinite;
+}
+@keyframes typing {
+    40%, 60%{
+        left: calc(99% + 10px);
+    }
+    100%{
+        left:0;
+    }
+}
+
+
+/* Wave animation */
+
+nav .wave {
+    animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+    animation-duration: 2.5s;        /* Change to speed up or slow down */
+    animation-iteration-count: infinite;  /* Never stop waving :) */
+    transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+    display: inline-block;
+  }
+  
+  @keyframes wave-animation {
+      0% { transform: rotate( 0.0deg) }
+     10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+     20% { transform: rotate(-8.0deg) }
+     30% { transform: rotate(14.0deg) }
+     40% { transform: rotate(-4.0deg) }
+     50% { transform: rotate(10.0deg) }
+     60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+    100% { transform: rotate( 0.0deg) }
+  }
+  
+  
+  
+/* Fin Nav --------------------- */
+
+/* Main --------------------- */
 main{
     display: flex;
     background-color: yellow;
     width: 100%;
 }
 
+/* Fin Main--------------------- */
+
+/* Section --------------------- */
 section{
     display: flex;
     background-color: orange;
     width: 100%;
 }
+/* Fin Section --------------------- */
 
+/* Footer --------------------- */
 footer{
     display: flex;
     background-color: chartreuse;
     width: 100%;
 }
+
+/* Fin Footer --------------------- */
