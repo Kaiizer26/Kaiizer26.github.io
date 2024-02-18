@@ -1,3 +1,4 @@
+<?php ?>
 <!DOCTYPE html>
 <html lang="fr">
     <head>
@@ -10,19 +11,19 @@
     <body>
         <!-- Header ---------------- -->
         <header id="header">
-            <a href="index.html" id="header-dylan">Dylan Zakaharinivo</a>
+            <a href="index.php" id="header-dylan">Dylan Zakaharinivo</a>
             <div id="header-milieu">
                 <a href="#header">Accueil</a>
                 <a href="#a-propos">A propos</a>
                 <a href="#competences">Compétences</a>
                 <!-- <a href="#header">Portfolio</a> -->
-                <a href="#header">Contact</a>
+                <a href="php/contact.php">Contact</a>
             </div>
             <a href="https://github.com/Kaiizer26"><img src="images/github.256x249.png" alt="logo github"></a>
         </header>
 
         <!-- Nav Hero Banner --------------- -->
-        <nav>
+        <nav id="nav-index">
             <div id="nav-texte">
                 <p id="nav-hello">Salut, je m'appelle</p>
                 <h1 id="nav-dylan">Dylan Zakaharinivo</h1>
@@ -46,7 +47,7 @@
                 <div class="a-propos-container">
                     <img src="images/989c31eebd5af6a3a823879b6b3ac429.jpg">
                     <div class="main-droite">
-                        <p>Etudiant en 1ère année de Bachelor Développement Web & Application, je suis actuellement en recherche d’un stage en tant que Développeur (Front-End, Back-End, Full-Stack, Application). N'ayant pas d'expérience professionnelle concrète à ce jour, je serai d'autant plus motivé, passionné et prêt à répondre à chaque mission qui me sera confié.</p>
+                        <p>Etudiant en 1ère année de Bachelor Développement Web & Application, je suis actuellement en recherche d’un stage en tant que Développeur (Front-End, Back-End, Full-Stack, Application). N'ayant pas d'expérience professionnelle concrète à ce jour, je serai d'autant plus motivé, passionné et prêt à répondre à chaque mission qui me sera confiée.</p>
 
                         <p>Ma démarche en programmation et en Web Design se distingue par une approche créative, mettant l'accent sur l'innovation et l'esthétique du site web. Ma capacité à m'adapter aux nouvelles technologies témoigne de ma volonté d'apprendre constamment dans le domaine du développement Web.</p>
                     </div>
@@ -57,8 +58,10 @@
 
         <!-- Section Compétences -->
         <section class="section" id="competences">
+            
             <hr>
             <h2>Compétences</h2>
+            
 
             <section class="section-section">
 
