@@ -458,12 +458,7 @@ nav#nav-contact #contact-message textarea::placeholder{
     font-family: 'Poppins';
 }
 
-/* nav#nav-contact button{
-    padding: 15px 20px;
-    width: 165px;
-    margin-left: 5em;
-} */
-
+/* Footer contact ------------- */
 nav#nav-contact .footer-contact{
     display: flex;
     flex-direction: row;
@@ -480,7 +475,6 @@ nav#nav-contact img{
 nav#nav-contact .autres-images{
     margin-left: 1em;
 }
-
 
 /* ---------------------------------- */
 

@@ -13,9 +13,9 @@
         <header id="header">
             <a href="index.php" id="header-dylan">Dylan Zakaharinivo</a>
             <div id="header-milieu">
-                <a href="../index.php">Accueil</a>
-                <a href="../index.php#a-propos">A propos</a>
-                <a href="../index.php#competences">Compétences</a>
+                <a href="index.php">Accueil</a>
+                <a href="index.php#a-propos">A propos</a>
+                <a href="index.php#competences">Compétences</a>
                 <!-- <a href="#header">Portfolio</a> -->
                 <a href="#header">Contact</a>
             </div>
