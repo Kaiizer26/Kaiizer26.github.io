@@ -127,7 +127,7 @@ nav#nav-index ul li{
     position: relative;
     font-size: 24px;
     top:0;
-    animation: slide 16s steps(4) infinite;
+    animation: slide 40s steps(4) infinite;
     
 }
 @keyframes slide{
@@ -154,7 +154,8 @@ nav#nav-index h2::after{
     width: 100%;
     background-color: #1F1F1F;
     border-left: 2px solid #FC6D6D;
-    animation: typing 4s steps(44) infinite;
+    /* animation: typing 4s steps(44) infinite; */
+    animation: typing 10s steps(55) infinite;
 }
 @keyframes typing {
     40%, 60%{
@@ -269,9 +270,7 @@ main article .main-droite p{
 
 }
 
-
 .section hr{
-    position: relative;
     border: none;
     border-top: 4px solid #fde68a;
     position: relative;
@@ -280,11 +279,53 @@ main article .main-droite p{
     width: 12%;
 
 }
+
 .section h2{
     position: absolute;
     left: calc(25% + 25px);
     
-    }
+}
+
+.section .skills-btn{
+    display: flex;
+    margin-left: 20vh;
+    margin-top: 10vh;
+}
+
+.section .skills-btn button{
+    border:none;
+    border-radius: 10px;
+    padding: 20px 15px;
+    text-decoration: none;
+    margin-left: 2em;
+    background-color:transparent;
+}
+
+.section .skills-btn #btn-technologies{
+    background-color: #2a281e;
+}
+.section .skills-btn #h3-technologies{
+    text-align: center;
+    color: #fde68a;
+    opacity: 1;
+}
+
+
+
+.section .skills-btn button:hover h3{
+    opacity: 1 !important;
+    color: white !important;
+}
+.section .skills-btn h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    height: 10px;
+    color: white;
+    opacity: 0.4;
+}
+
 .section section{
     display: flex;
     flex-wrap: wrap;
@@ -307,7 +348,10 @@ main article .main-droite p{
     position: relative;
 }
 
-.section h3{
+.section section article.outils{
+    display: none;
+}
+.section article h3{
     height: 10px;
     color: white;
 }
