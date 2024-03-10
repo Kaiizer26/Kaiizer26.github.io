@@ -127,7 +127,7 @@ nav#nav-index ul li{
     position: relative;
     font-size: 24px;
     top:0;
-    animation: slide 40s steps(4) infinite;
+    animation: slide 36s steps(4) infinite;
     
 }
 @keyframes slide{
@@ -155,11 +155,11 @@ nav#nav-index h2::after{
     background-color: #1F1F1F;
     border-left: 2px solid #FC6D6D;
     /* animation: typing 4s steps(44) infinite; */
-    animation: typing 10s steps(55) infinite;
+    animation: typing 9s steps(65) infinite;
 }
 @keyframes typing {
     40%, 60%{
-        left: calc(99% + 10px);
+        left: calc(100%);
     }
     100%{
         left:0;
