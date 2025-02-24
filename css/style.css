@@ -81,6 +81,11 @@ header div#header-milieu a:hover:after{
 header div#header-milieu a:hover{
     opacity: 0.7;
 }
+header div#header-droite a{
+    /* position: relative;
+    margin-left: 32px; */
+    margin: 0 .5em;
+}
 header img{
     margin-top: 0;
     height: 3em;
